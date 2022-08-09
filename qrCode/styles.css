@@ -1,0 +1,30 @@
+.qrContainer{
+    min-width: 1000px;
+    min-height: 842px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 2rem;
+    margin: 1rem;
+    gap:10px;
+    border: black solid 2px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.qrCode > img{
+    height: 128px;
+    width: 128px;
+}
+.printBTN{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

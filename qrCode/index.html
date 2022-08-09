@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="pageContent">
+        <div class="header">
+            <input type="text" name="qrcode" id="qrInput" label="qrInput" placeholder="qr text" title="qrInput">
+            <select name="selectSize" id="selectSize">
+                <option value="64px">small</option>
+                <option value="128px">medium</option>
+                <option value="200px">large</option>
+            </select>
+            <select name="selectType" id="selectType">
+                <option value="qrcode">qr code</option>
+                <option value="barcode">barcode</option>
+            </select>
+            <select name="selectText" id="selectText">
+                <option value="above">text above</option>
+                <option value="under">text under</option>
+            </select>
+            <select name="selectPassword" id="selectPassword" onchange="changeInputType()">
+                <option value="noPassword">not password</option>
+                <option value="password">password</option>
+            </select>
+            <button onclick="addQR()">ADD</button>
+        </div>
+        <div class="qrContainer" id="container">
+            <button class="printBTN" id="printBTN" onclick="printContent()">print</button>
+        </div>
+    </div>
+
+    <script src="JsBarcode.all.min.js"></script>
+    <script src="qrcode.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
